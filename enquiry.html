@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Crumb Bakery | Enquiry Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>The Daily Crumb</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Products & Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Custom Cake & Catering Enquiry</h2>
+            <p>Fill out the form below to request a personalized quote for your next event or celebration.</p>
+        </section>
+
+        <section class="form-section">
+            <form action="thank-you.html" method="POST" class="enquiry-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="082 123 4567">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event & Order Details</legend>
+                    <div class="form-group">
+                        <label for="enquiry-type">Type of Enquiry *</label>
+                        <select id="enquiry-type" name="enquiry_type" required>
+                            <option value="">Select an option</option>
+                            <option value="birthday-cake">Custom Birthday Cake</option>
+                            <option value="wedding-cake">Wedding Cake</option>
+                            <option value="catering">Event Catering / Office Order</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Required Date *</label>
+                        <input type="date" id="event-date" name="event_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="servings">Estimated Number of Servings</label>
+                        <input type="number" id="servings" name="servings" min="1" placeholder="e.g. 20">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Detailed Description & Dietary Requirements</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your theme, color choices, flavor preferences, or allergies..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 The Daily Crumb Bakery. All rights reserved.</p>
+            <p>Visit us at 123 Bakery Lane, Neighborhood | Open Tue-Sun: 7:00 AM - 4:00 PM</p>
+        </div>
+    </footer>
+
+</body>
+</html>
